@@ -13,13 +13,13 @@ $ npm install --save strip-outer
 ## Usage
 
 ```js
-var stripOuter = require('strip-outer');
+const stripOuter = require('strip-outer');
 
 stripOuter('foobarfoo', 'foo');
-//=> bar
+//=> 'bar'
 
 stripOuter('unicorncake', 'unicorn');
-//=> cake
+//=> 'cake'
 ```
 
 

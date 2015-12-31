@@ -1,9 +1,7 @@
-'use strict';
-var test = require('ava');
-var stripOuter = require('./');
+import test from 'ava';
+import fn from './';
 
-test(function (t) {
-	t.assert(stripOuter('foobarfoo', 'foo') === 'bar');
-	t.assert(stripOuter('unicorncake', 'unicorn') === 'cake');
-	t.end();
+test(t => {
+	t.is(fn('foobarfoo', 'foo'), 'bar');
+	t.is(fn('unicorncake', 'unicorn'), 'cake');
 });

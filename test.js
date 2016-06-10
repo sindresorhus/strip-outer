@@ -1,7 +1,7 @@
 import test from 'ava';
-import fn from './';
+import m from './';
 
 test(t => {
-	t.is(fn('foobarfoo', 'foo'), 'bar');
-	t.is(fn('unicorncake', 'unicorn'), 'cake');
+	t.is(m('foobarfoo', 'foo'), 'bar');
+	t.is(m('unicorncake', 'unicorn'), 'cake');
 });

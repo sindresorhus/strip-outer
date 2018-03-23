@@ -1,6 +1,6 @@
 {
   "name": "strip-outer",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Strip a substring from the start/end of a string",
   "license": "MIT",
   "repository": "sindresorhus/strip-outer",

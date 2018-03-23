@@ -1,11 +1,11 @@
 'use strict';
-var escapeStringRegexp = require('escape-string-regexp');
+const escapeStringRegexp = require('escape-string-regexp');
 
-module.exports = function (str, sub) {
-	if (typeof str !== 'string' || typeof sub !== 'string') {
-		throw new TypeError();
+module.exports = (input, substring) => {
+	if (typeof input !== 'string' || typeof substring !== 'string') {
+		throw new TypeError('Expected a string');
 	}
 
-	sub = escapeStringRegexp(sub);
-	return str.replace(new RegExp('^' + sub + '|' + sub + '$', 'g'), '');
+	substring = escapeStringRegexp(substring);
+	return input.replace(new RegExp(`^${substring}|${substring}$`, 'g'), '');
 };

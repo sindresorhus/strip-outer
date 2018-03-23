@@ -6,7 +6,7 @@
 ## Install
 
 ```
-$ npm install --save strip-outer
+$ npm install strip-outer
 ```
 
 

@@ -1,4 +1,4 @@
-# strip-outer [![Build Status](https://travis-ci.org/sindresorhus/strip-outer.svg?branch=master)](https://travis-ci.org/sindresorhus/strip-outer)
+# strip-outer
 
 > Strip a substring from the start/end of a string
 

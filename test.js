@@ -1,7 +1,8 @@
 import test from 'ava';
-import m from '.';
+import stripOuter from './index.js';
 
 test('main', t => {
-	t.is(m('foobarfoo', 'foo'), 'bar');
-	t.is(m('unicorncake', 'unicorn'), 'cake');
+	t.is(stripOuter('foobarfoo', 'foo'), 'bar');
+	t.is(stripOuter('unicorncake', 'unicorn'), 'cake');
+	t.is(stripOuter('unicorncake', 'cake'), 'unicorn');
 });
